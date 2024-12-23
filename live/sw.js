@@ -13,7 +13,7 @@ function self_install(e) {
 function self_fetch(e) {
   console.log("sw.js: Start Handling Fetch");
   async function sendResponse(request) {
-    if (request.url = new URL(urlSelf, "./test").toString()) {
+    if (request.url = new URL(urlSelf, "./test/").toString()) {
       return Response.redirect("https://www.google.com/");
     } else {
       return await fetch(e.request);
